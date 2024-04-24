@@ -18,19 +18,14 @@ public class Ciudad {
 
     private String nombreCiudad;
 
-
-
     //Relaciones
     @OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "ciudad")
     private List<Usuario> usuario;
-
     @OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "ciudad")
     private List<Banco> bancos;
 
-
-
     @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
-    @JoinColumn(name = "idPais",nullable = false)
+    @JoinColumn(name = "pais_id",nullable = false)
     private Pais pais;
 
 }
