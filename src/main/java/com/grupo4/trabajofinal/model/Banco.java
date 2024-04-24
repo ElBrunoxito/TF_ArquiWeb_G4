@@ -5,24 +5,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Usuario {
+public class Banco {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String nombreUsuario;
-    private String apellidoUsuario;
-    private String emailUsuario;
-    private String contrasena;
-    private Date fechaRegistro = new Date();
-    private String direccionUsuario;
-    private String telefonoUsuario;
-    //Referencias
+
+    private String nombreBanco;
+    private String direccionBanco;
+    private String telefonoBanco;
+
+
     @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     @JoinColumn(name = "idCiudad")
     private Ciudad ciudad;
