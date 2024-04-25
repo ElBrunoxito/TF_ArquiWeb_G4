@@ -23,4 +23,8 @@ public class Banco {
     @JoinColumn(name = "idCiudad")
     private Ciudad ciudad;
 
+    //Relacion tarjetas debito
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "banco", cascade = CascadeType.ALL)
+    List<TarjetaDebito> tarjetas;
+
 }
