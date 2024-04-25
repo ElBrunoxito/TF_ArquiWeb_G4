@@ -27,4 +27,9 @@ public class TarjetaDebito {
     // relacion de 1 a muchos de TD con transacciones
     @OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "tarjetaDebito")
     private List<Transaccion> transacciones;
+
+    //relacion banco
+    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @JoinColumn(name = "banco_id")
+    Banco banco;
 }
