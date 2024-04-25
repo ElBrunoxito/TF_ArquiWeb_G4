@@ -17,14 +17,6 @@ public class PaisService {
         this.paisRepository = paisRepository;
     }
 
-    /*public List<Pais> lista() {
-        return paisRepository.findAll();
-    }
-    public Pais insertar(Pais pais){
-        return paisRepository.save(pais);
-    }*/
-
-    //sesion clasesUPC---------------------------------------------------
     public List<PaisDto> getAll() {
         List<Pais> lista = paisRepository.findAll();
         List<PaisDto> listaDto = new ArrayList<>();
