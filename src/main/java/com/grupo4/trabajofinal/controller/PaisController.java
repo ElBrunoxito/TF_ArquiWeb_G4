@@ -1,9 +1,9 @@
-package com.upc.tp_alejandroversion.controller;
+package com.grupo4.trabajofinal.controller;
 
-import com.upc.tp_alejandroversion.dto.PaisDto;
-import com.upc.tp_alejandroversion.model.Pais;
-import com.upc.tp_alejandroversion.model.Usuario;
-import com.upc.tp_alejandroversion.service.PaisService;
+import com.grupo4.trabajofinal.dto.PaisDto;
+import com.grupo4.trabajofinal.model.Pais;
+import com.grupo4.trabajofinal.model.Usuario;
+import com.grupo4.trabajofinal.service.PaisService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,11 +18,6 @@ public class PaisController {
     public PaisController(PaisService paisService) {
         this.paisService = paisService;
     }
-
-    /*@PostMapping
-    public ResponseEntity<Pais> insertar(@RequestBody Pais pais){
-        return new ResponseEntity<>(paisService.insertar(pais), HttpStatus.CREATED);
-    }*/
 
     @GetMapping
     public ResponseEntity<List<PaisDto>> getAll() {
