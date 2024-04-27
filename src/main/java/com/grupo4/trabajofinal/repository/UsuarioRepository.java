@@ -1,6 +1,6 @@
-package com.upc.tp_alejandroversion.repository;
+package com.grupo4.trabajofinal.repository;
 
-import com.upc.tp_alejandroversion.model.Usuario;
+import com.grupo4.trabajofinal.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
