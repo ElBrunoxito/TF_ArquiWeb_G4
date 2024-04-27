@@ -1,4 +1,4 @@
-package com.upc.tp_alejandroversion.dto;
+package com.grupo4.trabajofinal.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
