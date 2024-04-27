@@ -31,4 +31,15 @@ public class Usuario {
     @OneToOne(mappedBy = "usuario" ,cascade = CascadeType.ALL)
     private TarjetaDebito tarjetaDebito;
 
+    //Constructor sin Id, sin lista de tarjetas, sin ciudad
+    public Usuario(String nombreUsuario, String apellidoUsuario, String emailUsuario, String contrasena, Date fechaRegistro, String direccionUsuario, String telefonoUsuario) {
+        this.nombreUsuario = nombreUsuario;
+        this.apellidoUsuario = apellidoUsuario;
+        this.emailUsuario = emailUsuario;
+        this.contrasena = contrasena;
+        this.fechaRegistro = fechaRegistro;
+        this.direccionUsuario = direccionUsuario;
+        this.telefonoUsuario = telefonoUsuario;
+    }
+
 }
