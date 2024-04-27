@@ -1,10 +1,10 @@
-package com.upc.tp_alejandroversion.service;
+package com.grupo4.trabajofinal.service;
 
-import com.upc.tp_alejandroversion.dto.PaisDto;
-import com.upc.tp_alejandroversion.dto.UsuarioDto;
-import com.upc.tp_alejandroversion.model.Pais;
-import com.upc.tp_alejandroversion.model.Usuario;
-import com.upc.tp_alejandroversion.repository.UsuarioRepository;
+import com.grupo4.trabajofinal.dto.PaisDto;
+import com.grupo4.trabajofinal.dto.UsuarioDto;
+import com.grupo4.trabajofinal.model.Pais;
+import com.grupo4.trabajofinal.model.Usuario;
+import com.grupo4.trabajofinal.repository.UsuarioRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
